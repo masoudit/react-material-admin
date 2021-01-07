@@ -17,12 +17,14 @@ export default makeStyles(theme => ({
   },
   drawerOpen: {
     width: drawerWidth,
+    backgroundColor: theme.palette.background.dark,
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
   },
   drawerClose: {
+    backgroundColor: theme.palette.background.dark,
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,

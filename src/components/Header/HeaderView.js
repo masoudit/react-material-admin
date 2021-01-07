@@ -103,7 +103,7 @@ const Header = ({ classes, isSidebarOpened, toggleSidebar, ...props }) => (
           />
         )}
       </IconButton>
-      <Typography variant="h6" weight="medium" className={classes.logotype}>React Material Admin</Typography>
+      <Typography variant="h6" weight="medium" className={classes.logotype}>DkMartech Admin</Typography>
       <div className={classes.grow} />
       <div
         className={classNames(classes.search, {
@@ -253,7 +253,7 @@ const Header = ({ classes, isSidebarOpened, toggleSidebar, ...props }) => (
             className={classes.profileMenuLink}
             component="a"
             color="primary"
-            href="https://flatlogic.com"
+            href="https://digikala.com"
           >
             Flalogic.com
           </Typography>

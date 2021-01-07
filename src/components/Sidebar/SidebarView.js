@@ -90,6 +90,8 @@ const styles = theme => ({
   },
   drawer: {
     width: drawerWidth,
+    backgroundColor: '#000',
+
     flexShrink: 0,
     whiteSpace: 'nowrap',
     top: theme.spacing.unit * 8,
@@ -134,7 +136,7 @@ const styles = theme => ({
     [theme.breakpoints.up("md")]: {
       display: 'none',
     }
-  }
+  },
 });
 
 export default withStyles(styles, { withTheme: true })(SidebarView);

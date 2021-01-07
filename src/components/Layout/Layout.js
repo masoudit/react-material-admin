@@ -44,13 +44,13 @@ function Layout(props) {
   return (
     <div className={classes.root}>
         <>
-          <Header history={props.history} />
           <Sidebar />
           <div
             className={classnames(classes.content, {
               [classes.contentShift]: layoutState.isSidebarOpened,
             })}
           >
+            <Header history={props.history} />
             <div className={classes.fakeToolbar} />
             <Switch>
               <Route path="/app/dashboard" component={Dashboard} />
@@ -76,15 +76,15 @@ function Layout(props) {
               <div>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/'}
+                  href={'https://digikala.com/'}
                   target={'_blank'}
                   className={classes.link}
                 >
-                  Flatlogic
+                  digikala
                 </Link>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/about'}
+                  href={'https://digikala.com/about'}
                   target={'_blank'}
                   className={classes.link}
                 >
@@ -92,7 +92,7 @@ function Layout(props) {
                 </Link>
                 <Link
                   color={'primary'}
-                  href={'https://flatlogic.com/blog'}
+                  href={'https://digikala.com/blog'}
                   target={'_blank'}
                   className={classes.link}
                 >
@@ -101,7 +101,7 @@ function Layout(props) {
               </div>
               <div>
                 <Link
-                  href={'https://www.facebook.com/flatlogic'}
+                  href={'https://www.facebook.com/digikala'}
                   target={'_blank'}
                 >
                   <IconButton aria-label="facebook">
@@ -113,7 +113,7 @@ function Layout(props) {
                   </IconButton>
                 </Link>
                 <Link
-                  href={'https://twitter.com/flatlogic'}
+                  href={'https://twitter.com/digikala'}
                   target={'_blank'}
                 >
                   <IconButton aria-label="twitter">
@@ -125,7 +125,7 @@ function Layout(props) {
                   </IconButton>
                 </Link>
                 <Link
-                  href={'https://github.com/flatlogic'}
+                  href={'https://github.com/digikala'}
                   target={'_blank'}
                 >
                   <IconButton
